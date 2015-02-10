@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <style>
+  a { color: #12C; }
+  a:visited { color: #61C; }
+  a:focus { outline: thin dotted; }
+  a:hover, a:active { color: #c00; outline: 0; }
+  body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
+  body { background: #fff; }
+  header, footer, .container { max-width: 45em; margin: 0 auto; }
+
+  header { padding: 0 0.5em; color: #C90B0B; }
+  header img { border-radius: 40px; float: left; }
+  header p span { font-size: 0.8em; font-weight: normal;}
+  </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=" FILL ME IN ">
@@ -8,7 +22,7 @@
     <title>Cameron Pittman: Portfolio</title>
 
    
-    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet">-->
     <link href="css/print.css" rel="stylesheet" media="print">
 
     <script>
@@ -33,7 +47,17 @@
       <div class="hero">
         <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
       </div>
-
+      <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'style.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
       <div class="content">
         <ul>
           <li>
