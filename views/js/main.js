@@ -503,7 +503,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
  //top a variable to reduce calculation time inside the loop
- var top=documnt.body.scrollTop/1250;
+ var top=document.body.scrollTop/1250;
   var items = document.querySelectorAll('.mover');
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin(top + (i % 10));
