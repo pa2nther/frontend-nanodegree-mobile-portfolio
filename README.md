@@ -1,3 +1,21 @@
+Project 4
+
+Strategies I used to Optimize the Webpage
+
+I repeatedly resized and optimized the images especially pizzeria to lower the PageSpeed insights score.
+
+the scripts included were made async to reduce the load time
+
+Used code from the Google website to delay css loading thru script. Added the css that seemed essential in the head. There was some duplication but wanted to make sure it could be applied to subsequent pages.
+
+I took out some code from the for loop that didn’t need to be repeated to fix the slider time and framerate. To improve the slider time. I changed some of the values used.
+
+This application can be run by clicking on links and sliding scroll bars. To view the speed of items the console can be viewed in Google Chrome.
+
+Websites visited that helped
+
+http://addyosmani.com/blog/performance-optimisation-with-timeline-profiles/ Google Developers website desalasworks.com stackoverflow.com http://optimizilla.com/ Kraken.io
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
