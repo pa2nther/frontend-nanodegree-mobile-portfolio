@@ -403,7 +403,8 @@ var resizePizzas = function(size) {
   window.performance.mark("mark_start_resize");   // User Timing API function
 
   // Changes the value for the size of the pizza above the slider
-  function changeSliderLabel(size) {
+  //to reduce time i moved this inside sizeswitcher
+  /*function changeSliderLabel(size) {
     switch(size) {
       case "1":
         document.querySelector("#pizzaSize").innerHTML = "Small";
@@ -420,7 +421,7 @@ var resizePizzas = function(size) {
   }
 
   changeSliderLabel(size);
-
+*/
   // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {
     var oldwidth = elem.offsetWidth;
@@ -432,10 +433,13 @@ var resizePizzas = function(size) {
     function sizeSwitcher (size) {
       switch(size) {
         case "1":
+         document.querySelector("#pizzaSize").innerHTML = "Small"; 
           return 0.25;
         case "2":
+        document.querySelector("#pizzaSize").innerHTML = "Medium";
           return 0.3333;
         case "3":
+        document.querySelector("#pizzaSize").innerHTML = "Large";
           return 0.5;
         default:
           console.log("bug in sizeSwitcher");
