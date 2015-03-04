@@ -7,20 +7,20 @@
   -box-sizing: border-box;
 }
 
-body {
+/*body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   background: black;
 }
-
-input {
+*/
+/*input {
   background: grey;
   font-size: 18px;
-}
-
+}*/
+/*
 form {
   display: inline-block;
 }
-
+*/
 .centered {
   text-align: center;
 }
@@ -29,12 +29,12 @@ form {
   font-weight: 800;
 }
 
-.mover {
+/*.mover {
   position: fixed;
   width: 256px;
   z-index: -1;
 }
-
+*/
 .randomPizzaContainer {
   float: left;
   display: flex;
