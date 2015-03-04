@@ -9,7 +9,7 @@ the scripts included were made async to reduce the load time
 
 Used code from the Google website to delay css loading thru script. Added the css that seemed essential in the head. There was some duplication but wanted to make sure it could be applied to subsequent pages.
 
-I took out some code from the for loop that didn’t need to be repeated to fix the slider time and framerate. To improve the  time, I changed some of the values used, removed a function.
+I took out some code from the for loop that didn’t need to be repeated to fix the slider time and framerate. To improve the  time, I changed some of the values used, removed a function. The main.js file was minified using Google's Closure Compiler since it was the largest and had many comments. The readable file is on the master branch. The css file was not very large and did not contain many comments so it was left in regular format.
 
 This application can be run by clicking on links and sliding scroll bars. To view the speed of items the console can be viewed in Google Chrome.
 
