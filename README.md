@@ -9,7 +9,7 @@ the scripts included were made async to reduce the load time
 
 Used code from the Google website to delay css loading thru script. Added the css that seemed essential in the head. There was some duplication but wanted to make sure it could be applied to subsequent pages.
 
-I took out some code from the for loop that didn’t need to be repeated to fix the slider time and framerate. To improve the slider time. I changed some of the values used.
+I took out some code from the for loop that didn’t need to be repeated to fix the slider time and framerate. To improve the  time, I changed some of the values used, removed a function.
 
 This application can be run by clicking on links and sliding scroll bars. To view the speed of items the console can be viewed in Google Chrome.
 
